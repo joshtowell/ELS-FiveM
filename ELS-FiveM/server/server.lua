@@ -848,6 +848,11 @@ AddEventHandler("els:setSirenState_s", function(newstate)
     TriggerClientEvent("els:setSirenState_c", -1, source, newstate)
 end)
 
+RegisterNetEvent("els:setSirenParkKill_s")
+AddEventHandler("els:setSirenParkKill_s", function(newstate, vehicle)
+    TriggerClientEvent("els:setSirenParkKill_c", -1, source, newstate, vehicle)
+end)
+
 RegisterNetEvent("els:setDualSirenState_s")
 AddEventHandler("els:setDualSirenState_s", function(newstate)
     TriggerClientEvent("els:setDualSirenState_c", -1, source, newstate)
